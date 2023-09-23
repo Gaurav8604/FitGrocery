@@ -61,8 +61,8 @@ const CategorySidebar = () => {
       {
         data.map((item)=>{
           return(
-            <div className='category'>
-              <img src={item.categoryimage} alt='categoryimage'/>
+            <div className='category' key={item.id}>
+              <img src={item.categoryimage} alt='categoryimage' />
               <h3>{item.categoryname}</h3>
             </div> 
           )

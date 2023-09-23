@@ -9,10 +9,8 @@
     text-align: center;
 }
 
-
 .allproducts .products{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
