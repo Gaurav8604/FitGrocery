@@ -89,22 +89,22 @@ const AllProducts = () => {
       counttype:'1 per kg',
       discountpercent:13,
     },
-    // {
-    //   id:11,
-    //   productimage:img3,
-    //   productname:'Product 11',
-    //   productprice:110,
-    //   counttype:'1 per kg',
-    //   discountpercent:12,
-    // },
-    // {
-    //   id:12,
-    //   productimage:img4,
-    //   productname:'Product 12',
-    //   productprice:120,
-    //   counttype:'1 per kg',
-    //   discountpercent:19,
-    // }
+    {
+      id:11,
+      productimage:img3,
+      productname:'Product 11',
+      productprice:110,
+      counttype:'1 per kg',
+      discountpercent:12,
+    },
+    {
+      id:12,
+      productimage:img4,
+      productname:'Product 12',
+      productprice:120,
+      counttype:'1 per kg',
+      discountpercent:19,
+    }
   ]
 
   return (

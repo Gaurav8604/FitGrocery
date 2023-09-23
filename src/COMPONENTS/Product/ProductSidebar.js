@@ -1,7 +1,7 @@
 import React from 'react'
 import AllProducts from './AllProducts'
 import CategorySidebar from './CategorySidebar'
-import './Product_Sidebar.css';
+import './ProductSidebar.css';
 
 const Product_Sidebar = () => {
   return (
