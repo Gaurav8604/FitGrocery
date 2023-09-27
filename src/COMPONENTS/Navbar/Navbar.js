@@ -4,6 +4,7 @@ import './Navbar.css'
 import logo from '../../ASSETS/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import  Dropdown  from 'react-bootstrap/Dropdown';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [cartquantity,setcartquantity] = useState(0);
@@ -47,8 +48,13 @@ const Navbar = () => {
             <Dropdown.Item href="#/action-3">Fresh meat</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
-        <a>About Us</a>
-        <a>Contact Us</a>
+        <li> <Link to='/about' className='stylenone'>
+              About Us
+              </Link></li>
+
+              <li> <Link to='/contact' className='stylenone'>
+              Contact Us
+              </Link></li>
         <Dropdown>
           <Dropdown.Toggle variant="" id="dropdown-basic">
             More 
