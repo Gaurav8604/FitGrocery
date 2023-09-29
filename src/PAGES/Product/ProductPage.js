@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Link}from 'react-router-dom'
+import { Link,} from 'react-router-dom'
 import { toast } from 'react-toastify'
 import img1 from '../../ASSETS/Images/1.png'
 import img2 from '../../ASSETS/Images/2.png'
@@ -68,7 +68,7 @@ const ProductPage = () => {
                     "ProductReviews": [
                         {
                             "ReviewId": 1,
-                            "Name": "Gaurav Patil",
+                            "Name": "Harshal Jain",
                             "Email": "",
                             "Rating": 5,
                             "Date": "2021-08-01",
@@ -76,7 +76,7 @@ const ProductPage = () => {
                         },
                         {
                             "ReviewId": 2,
-                            "Name": "Patil Gaurav",
+                            "Name": "Viraj",
                             "Email": "",
                             "Rating": 1,
                             "Date": "2021-08-01",
@@ -84,7 +84,7 @@ const ProductPage = () => {
                         },
                         {
                             "ReviewId": 3,
-                            "Name": "Gaurav Patil",
+                            "Name": "Harshal Jain",
                             "Email": "",
                             "Rating": 4,
                             "Date": "2021-08-01",
@@ -159,7 +159,7 @@ const ProductPage = () => {
             "ProductReviews": [
                 {
                     "ReviewId": 1,
-                    "Name": "Gaurav Patil",
+                    "Name": "Harshal Jain",
                     "Email": "",
                     "Rating": 5,
                     "Date": "2021-08-01",
@@ -167,7 +167,7 @@ const ProductPage = () => {
                 },
                 {
                     "ReviewId": 2,
-                    "Name": "Patil Gaurav",
+                    "Name": "Viraj",
                     "Email": "",
                     "Rating": 1,
                     "Date": "2021-08-01",
@@ -175,7 +175,7 @@ const ProductPage = () => {
                 },
                 {
                     "ReviewId": 3,
-                    "Name": "Gaurav Patil",
+                    "Name": "Harshal Jain",
                     "Email": "",
                     "Rating": 4,
                     "Date": "2021-08-01",
@@ -230,7 +230,7 @@ const ProductPage = () => {
             "ProductReviews": [
                 {
                     "ReviewId": 1,
-                    "Name": "Gaurav Patil",
+                    "Name": "Harshal Jain",
                     "Email": "",
                     "Rating": 5,
                     "Date": "2021-08-01",
@@ -238,7 +238,7 @@ const ProductPage = () => {
                 },
                 {
                     "ReviewId": 2,
-                    "Name": "Patil Gaurav",
+                    "Name": "Viraj",
                     "Email": "",
                     "Rating": 1,
                     "Date": "2021-08-01",
@@ -246,7 +246,7 @@ const ProductPage = () => {
                 },
                 {
                     "ReviewId": 3,
-                    "Name": "Gaurav Patil",
+                    "Name": "Harshal Jain",
                     "Email": "",
                     "Rating": 4,
                     "Date": "2021-08-01",
@@ -301,7 +301,7 @@ const ProductPage = () => {
             "ProductReviews": [
                 {
                     "ReviewId": 1,
-                    "Name": "Gaurav Patil",
+                    "Name": "Harshal Jain",
                     "Email": "",
                     "Rating": 5,
                     "Date": "2021-08-01",
@@ -309,7 +309,7 @@ const ProductPage = () => {
                 },
                 {
                     "ReviewId": 2,
-                    "Name": "Patil Gaurav",
+                    "Name": "Viraj",
                     "Email": "",
                     "Rating": 1,
                     "Date": "2021-08-01",
@@ -317,7 +317,7 @@ const ProductPage = () => {
                 },
                 {
                     "ReviewId": 3,
-                    "Name": "Gaurav Patil",
+                    "Name": "Harshal Jain",
                     "Email": "",
                     "Rating": 4,
                     "Date": "2021-08-01",
@@ -372,7 +372,7 @@ const ProductPage = () => {
             "ProductReviews": [
                 {
                     "ReviewId": 1,
-                    "Name": "Gaurav Patil",
+                    "Name": "Harshal Jain",
                     "Email": "",
                     "Rating": 5,
                     "Date": "2021-08-01",
@@ -380,7 +380,7 @@ const ProductPage = () => {
                 },
                 {
                     "ReviewId": 2,
-                    "Name": "Patil Gaurav",
+                    "Name": "Viraj",
                     "Email": "",
                     "Rating": 1,
                     "Date": "2021-08-01",
@@ -388,7 +388,7 @@ const ProductPage = () => {
                 },
                 {
                     "ReviewId": 3,
-                    "Name": "Gaurav Patil",
+                    "Name": "Harshal Jain",
                     "Email": "",
                     "Rating": 4,
                     "Date": "2021-08-01",
@@ -443,7 +443,7 @@ const ProductPage = () => {
             "ProductReviews": [
                 {
                     "ReviewId": 1,
-                    "Name": "Gaurav Patil",
+                    "Name": "Harshal Jain",
                     "Email": "",
                     "Rating": 5,
                     "Date": "2021-08-01",
@@ -451,7 +451,7 @@ const ProductPage = () => {
                 },
                 {
                     "ReviewId": 2,
-                    "Name": "Patil Gaurav",
+                    "Name": "Viraj",
                     "Email": "",
                     "Rating": 1,
                     "Date": "2021-08-01",
@@ -459,7 +459,7 @@ const ProductPage = () => {
                 },
                 {
                     "ReviewId": 3,
-                    "Name": "Gaurav Patil",
+                    "Name": "Harshal Jain",
                     "Email": "",
                     "Rating": 4,
                     "Date": "2021-08-01",
@@ -514,7 +514,7 @@ const ProductPage = () => {
             "ProductReviews": [
                 {
                     "ReviewId": 1,
-                    "Name": "Gaurav Patil",
+                    "Name": "Harshal Jain",
                     "Email": "",
                     "Rating": 5,
                     "Date": "2021-08-01",
@@ -522,7 +522,7 @@ const ProductPage = () => {
                 },
                 {
                     "ReviewId": 2,
-                    "Name": "Patil Gaurav",
+                    "Name": "Viraj",
                     "Email": "",
                     "Rating": 1,
                     "Date": "2021-08-01",
@@ -530,7 +530,7 @@ const ProductPage = () => {
                 },
                 {
                     "ReviewId": 3,
-                    "Name": "Gaurav Patil",
+                    "Name": "Harshal Jain",
                     "Email": "",
                     "Rating": 4,
                     "Date": "2021-08-01",
@@ -544,6 +544,7 @@ const ProductPage = () => {
         let cart = JSON.parse(localStorage.getItem('cart'))
 
         if (cart) {
+            // alert('1 item is already added to cart')
             let itemincart = cart.find(item => item.productdata.ProductId === productdata.ProductId)
             if (itemincart) {
                 cart = cart.map(item => {
@@ -576,13 +577,20 @@ const ProductPage = () => {
                 quantity: count
             }]
 
+            // console.log(cart)
             localStorage.setItem('cart', JSON.stringify(cart))
         }
         setreloadnavbar(!reloadnavbar)
+        // window.location.reload()
         toast.success('Item added to cart')
     }
     return (
         <div className='productpage'>
+            {/* <h1>Product id is - {prodid}</h1>
+            <p>
+                {JSON.stringify(productdata)}
+            </p> */}
+
             <Navbar reloadnavbar={reloadnavbar}/>
 
             <div className='pc1'>
@@ -601,7 +609,7 @@ const ProductPage = () => {
                         {
                             imageset && imageset?.map((item, index) => {
                                 return (
-                                    <div className='imgsmall' key={item.id}
+                                    <div className='imgsmall'
                                         onClick={() => {
                                             setactiveimg(item)
                                         }}
