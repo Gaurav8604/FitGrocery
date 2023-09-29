@@ -9,6 +9,9 @@ import About from './PAGES/Extra/About';
 import Contact from './PAGES/Extra/Contact';
 import Login from './PAGES/Auth/Login';
 import Signup from './PAGES/Auth/Signup';
+import FAQ from './PAGES/Extra/FAQ';
+import Termsandconditions from './PAGES/Extra/Termsandconditions';
+import PrivacyPolicy from './PAGES/Extra/PrivacyPolicy';
 
 const App = () => {
   return (
@@ -21,6 +24,9 @@ const App = () => {
       <Route path="/contact" element={<Contact/>} />
       <Route path="/login" element={<Login/>}/>
       <Route path="/signup" element={<Signup/>}/>
+      <Route path="/FAQ" element={<FAQ/>} />
+      <Route path="/termsandconditions" element={<Termsandconditions/>} />
+      <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
       <Route path="*" element={<div><h1>404 NOT FOUND</h1></div>}/>
     </Routes>
     </BrowserRouter>
