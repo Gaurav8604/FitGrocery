@@ -576,21 +576,13 @@ const ProductPage = () => {
                 productdata,
                 quantity: count
             }]
-
-            // console.log(cart)
             localStorage.setItem('cart', JSON.stringify(cart))
         }
         setreloadnavbar(!reloadnavbar)
-        // window.location.reload()
         toast.success('Item added to cart')
     }
     return (
         <div className='productpage'>
-            {/* <h1>Product id is - {prodid}</h1>
-            <p>
-                {JSON.stringify(productdata)}
-            </p> */}
-
             <Navbar reloadnavbar={reloadnavbar}/>
 
             <div className='pc1'>

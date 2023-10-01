@@ -6,15 +6,10 @@ const ProductCard = ({ data }) => {
   const [show, setshow] = useState(false)
   const [count, setCount] = useState(1)
 
-  // const getproductid = () => {
-  //   alert(data.id)
-  // }
-
   const addtocart = () => {
     let cart = JSON.parse(localStorage.getItem('cart'))
     let productdata = data
     if (cart) {
-      // alert('1 item is already added to cart')
       let itemincart = cart.find(item => item.productdata.ProductId === productdata.ProductId)
       if (itemincart) {
         cart = cart.map(item => {
@@ -46,14 +41,9 @@ const ProductCard = ({ data }) => {
         productdata,
         quantity: count
       }]
-
-      // console.log(cart)
       localStorage.setItem('cart', JSON.stringify(cart))
     }
-    // setreloadnavbar(!reloadnavbar)
     window.location.reload()
-    // toast.success('Item added to cart')
-
   }
   return (
     <div className='product'>
@@ -93,7 +83,6 @@ const ProductCard = ({ data }) => {
             <button className='addtocart'
               onClick={() => {
                 setshow(false)
-                // setCount(1)
                 addtocart()
               }}
             >
