@@ -23,15 +23,6 @@
     font-size: 16px;
     font-weight: 700;
 }
-
-/* .cartcont table .cartitemrow th {
-    padding: 10px 0;
-    text-align: left;
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--col3);
-} */
-
 .cartcont table .cartitemrow {
     border-bottom: 1px solid #e0e0e0;
 }
@@ -161,13 +152,11 @@
     }
 
     .cartcont  table tr {
-        /* border-bottom: 3px solid #ddd; */
         display: block;
         margin-bottom: 20px;
     }
 
     .cartcont  table td {
-        /* border-bottom: 1px solid #ddd; */
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -176,10 +165,6 @@
     }
 
     table td::before {
-        /*
-      * aria-label has no advantage, it won't be read inside a table
-      content: attr(aria-label);
-      */
         content: attr(data-label);
         float: left;
         font-weight: bold;

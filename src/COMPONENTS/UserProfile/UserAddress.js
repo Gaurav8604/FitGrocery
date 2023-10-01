@@ -75,14 +75,6 @@ const UserAddress = () => {
                             <input type="text" />
                         </div>
 
-{/*                        
-                    </div>
-
-
-
-                    <div className='form'>
-                       */}
-
                         <div className='form-group'>
                             <label htmlFor='addressline1'>Address Line 1</label>
                             <input type="text" />

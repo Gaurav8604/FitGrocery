@@ -10,9 +10,9 @@ const OrderSuccessful = ({ orderid, message, redirecto }) => {
         OrderNo: orderid,
         OrderDate: '12/12/2021',
         OrderStatus: 'Delivered',
-        CustomerName: 'Harshal Jain',
-        CustomerShipToAddress: 'B-101, Shreeji Apartment, Near Shreeji Hospital, Kalyan West, Thane, Maharashtra 421301',
-        CustomerEmail: 'virajj014@gmail.com',
+        CustomerName: 'Gaurav Patil',
+        CustomerShipToAddress: '366/ABC, Bhoir Chowk, Keshavnagar, Chinchwad, Pune, 411033',
+        CustomerEmail: 'gauravpatil8604@gmail.com',
         OrderItems: [
             {
                 ProductName: 'Product 1',
@@ -38,7 +38,7 @@ const OrderSuccessful = ({ orderid, message, redirecto }) => {
             <button className='popup__close-btn'
                 onClick={() => {
 
-                    if(redirecto == 'userorders'){
+                    if(redirecto === 'userorders'){
                         window.location.href = '/user/yourorders'
                     }
                     setordersuccesscont(false)

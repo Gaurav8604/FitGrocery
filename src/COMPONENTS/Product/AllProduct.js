@@ -3,7 +3,6 @@ import ProductCard from './ProductCard'
 import img1 from '../../ASSETS/Products/1.png'
 import img2 from '../../ASSETS/Products/2.png'
 import img3 from '../../ASSETS/Products/3.png'
-import img4 from '../../ASSETS/Products/4.png'
 import './AllProduct.css'
 const AllProduct = () => {
     const products = [
@@ -54,7 +53,7 @@ const AllProduct = () => {
             "ProductReviews": [
                 {
                     "ReviewId": 1,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 5,
                     "Date": "2021-08-01",
@@ -70,7 +69,7 @@ const AllProduct = () => {
                 },
                 {
                     "ReviewId": 3,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 4,
                     "Date": "2021-08-01",
@@ -125,7 +124,7 @@ const AllProduct = () => {
             "ProductReviews": [
                 {
                     "ReviewId": 1,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 5,
                     "Date": "2021-08-01",
@@ -141,7 +140,7 @@ const AllProduct = () => {
                 },
                 {
                     "ReviewId": 3,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 4,
                     "Date": "2021-08-01",
@@ -196,7 +195,7 @@ const AllProduct = () => {
             "ProductReviews": [
                 {
                     "ReviewId": 1,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 5,
                     "Date": "2021-08-01",
@@ -212,7 +211,7 @@ const AllProduct = () => {
                 },
                 {
                     "ReviewId": 3,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 4,
                     "Date": "2021-08-01",
@@ -267,7 +266,7 @@ const AllProduct = () => {
             "ProductReviews": [
                 {
                     "ReviewId": 1,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 5,
                     "Date": "2021-08-01",
@@ -283,7 +282,7 @@ const AllProduct = () => {
                 },
                 {
                     "ReviewId": 3,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 4,
                     "Date": "2021-08-01",
@@ -338,7 +337,7 @@ const AllProduct = () => {
             "ProductReviews": [
                 {
                     "ReviewId": 1,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 5,
                     "Date": "2021-08-01",
@@ -354,7 +353,7 @@ const AllProduct = () => {
                 },
                 {
                     "ReviewId": 3,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 4,
                     "Date": "2021-08-01",
@@ -409,7 +408,7 @@ const AllProduct = () => {
             "ProductReviews": [
                 {
                     "ReviewId": 1,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 5,
                     "Date": "2021-08-01",
@@ -425,7 +424,7 @@ const AllProduct = () => {
                 },
                 {
                     "ReviewId": 3,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 4,
                     "Date": "2021-08-01",

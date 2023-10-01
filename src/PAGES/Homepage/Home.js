@@ -61,7 +61,7 @@ const Home = () => {
         "ProductReviews": [
             {
                 "ReviewId": 1,
-                "Name": "Harshal Jain",
+                "Name": "Gaurav Patil",
                 "Email": "",
                 "Rating": 5,
                 "Date": "2021-08-01",
@@ -77,7 +77,7 @@ const Home = () => {
             },
             {
                 "ReviewId": 3,
-                "Name": "Harshal Jain",
+                "Name": "Gaurav Patil",
                 "Email": "",
                 "Rating": 4,
                 "Date": "2021-08-01",
@@ -132,7 +132,7 @@ const Home = () => {
         "ProductReviews": [
             {
                 "ReviewId": 1,
-                "Name": "Harshal Jain",
+                "Name": "Gaurav Patil",
                 "Email": "",
                 "Rating": 5,
                 "Date": "2021-08-01",
@@ -148,7 +148,7 @@ const Home = () => {
             },
             {
                 "ReviewId": 3,
-                "Name": "Harshal Jain",
+                "Name": "Gaurav Patil",
                 "Email": "",
                 "Rating": 4,
                 "Date": "2021-08-01",
@@ -203,7 +203,7 @@ const Home = () => {
         "ProductReviews": [
             {
                 "ReviewId": 1,
-                "Name": "Harshal Jain",
+                "Name": "Gaurav Patil",
                 "Email": "",
                 "Rating": 5,
                 "Date": "2021-08-01",
@@ -219,7 +219,7 @@ const Home = () => {
             },
             {
                 "ReviewId": 3,
-                "Name": "Harshal Jain",
+                "Name": "Gaurav Patil",
                 "Email": "",
                 "Rating": 4,
                 "Date": "2021-08-01",
@@ -274,7 +274,7 @@ const Home = () => {
         "ProductReviews": [
             {
                 "ReviewId": 1,
-                "Name": "Harshal Jain",
+                "Name": "Gaurav Patil",
                 "Email": "",
                 "Rating": 5,
                 "Date": "2021-08-01",
@@ -290,7 +290,7 @@ const Home = () => {
             },
             {
                 "ReviewId": 3,
-                "Name": "Harshal Jain",
+                "Name": "Gaurav Patil",
                 "Email": "",
                 "Rating": 4,
                 "Date": "2021-08-01",
@@ -345,7 +345,7 @@ const Home = () => {
         "ProductReviews": [
             {
                 "ReviewId": 1,
-                "Name": "Harshal Jain",
+                "Name": "Gaurav Patil",
                 "Email": "",
                 "Rating": 5,
                 "Date": "2021-08-01",
@@ -361,7 +361,7 @@ const Home = () => {
             },
             {
                 "ReviewId": 3,
-                "Name": "Harshal Jain",
+                "Name": "Gaurav Patil",
                 "Email": "",
                 "Rating": 4,
                 "Date": "2021-08-01",
@@ -416,7 +416,7 @@ const Home = () => {
         "ProductReviews": [
             {
                 "ReviewId": 1,
-                "Name": "Harshal Jain",
+                "Name": "Gaurav Patil",
                 "Email": "",
                 "Rating": 5,
                 "Date": "2021-08-01",
@@ -432,7 +432,7 @@ const Home = () => {
             },
             {
                 "ReviewId": 3,
-                "Name": "Harshal Jain",
+                "Name": "Gaurav Patil",
                 "Email": "",
                 "Rating": 4,
                 "Date": "2021-08-01",

@@ -21,7 +21,6 @@
 }
 
 .shippingcont h2 {
-    /* background-color: aqua; */
     width: 100%;
     font-size: 25px;
 }
@@ -51,7 +50,6 @@
 }
 
 .shippingcont h3{
-    /* background-color: aqua; */
     font-size: 20px;
 }
 
@@ -69,10 +67,6 @@
     font-weight: 400;
     color: var(--col2);
 }
-/* .shippingcont .radio input[type="radio"] {
-
-} */
-
 .shippingadd {
     display: flex;
     flex-direction: column;

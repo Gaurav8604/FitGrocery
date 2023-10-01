@@ -1,17 +1,15 @@
 import React, { useEffect } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import { toast } from 'react-toastify'
 import img1 from '../../ASSETS/Images/1.png'
 import img2 from '../../ASSETS/Images/2.png'
 import img3 from '../../ASSETS/Images/3.png'
-import img4 from '../../ASSETS/Images/4.png'
 import Footer1 from '../../COMPONENTS/Footer/Footer1'
 import Footer2 from '../../COMPONENTS/Footer/Footer2'
 import Navbar from '../../COMPONENTS/Navbar/Navbar'
 import ProductsSlider from '../../COMPONENTS/Product/ProductsSlider'
 import './ProductPage.css'
 const ProductPage = () => {
-    const { prodid } = useParams()
     const [imageset, setimageset] = React.useState(null)
     const [productdata, setproductdata] = React.useState([])
     const [activeimg, setactiveimg] = React.useState({})
@@ -70,7 +68,7 @@ const ProductPage = () => {
                     "ProductReviews": [
                         {
                             "ReviewId": 1,
-                            "Name": "Harshal Jain",
+                            "Name": "Gaurav Patil",
                             "Email": "",
                             "Rating": 5,
                             "Date": "2021-08-01",
@@ -86,7 +84,7 @@ const ProductPage = () => {
                         },
                         {
                             "ReviewId": 3,
-                            "Name": "Harshal Jain",
+                            "Name": "Gaurav Patil",
                             "Email": "",
                             "Rating": 4,
                             "Date": "2021-08-01",
@@ -97,7 +95,7 @@ const ProductPage = () => {
             ]
         }
 
-        if (temp.Code == 200) {
+        if (temp.Code === 200) {
             setimageset(temp.Data[0].ProductImage)
             setproductdata(temp.Data[0])
             setactiveimg(temp.Data[0].ProductImage[0])
@@ -161,7 +159,7 @@ const ProductPage = () => {
             "ProductReviews": [
                 {
                     "ReviewId": 1,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 5,
                     "Date": "2021-08-01",
@@ -177,7 +175,7 @@ const ProductPage = () => {
                 },
                 {
                     "ReviewId": 3,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 4,
                     "Date": "2021-08-01",
@@ -232,7 +230,7 @@ const ProductPage = () => {
             "ProductReviews": [
                 {
                     "ReviewId": 1,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 5,
                     "Date": "2021-08-01",
@@ -248,7 +246,7 @@ const ProductPage = () => {
                 },
                 {
                     "ReviewId": 3,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 4,
                     "Date": "2021-08-01",
@@ -303,7 +301,7 @@ const ProductPage = () => {
             "ProductReviews": [
                 {
                     "ReviewId": 1,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 5,
                     "Date": "2021-08-01",
@@ -319,7 +317,7 @@ const ProductPage = () => {
                 },
                 {
                     "ReviewId": 3,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 4,
                     "Date": "2021-08-01",
@@ -374,7 +372,7 @@ const ProductPage = () => {
             "ProductReviews": [
                 {
                     "ReviewId": 1,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 5,
                     "Date": "2021-08-01",
@@ -390,7 +388,7 @@ const ProductPage = () => {
                 },
                 {
                     "ReviewId": 3,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 4,
                     "Date": "2021-08-01",
@@ -445,7 +443,7 @@ const ProductPage = () => {
             "ProductReviews": [
                 {
                     "ReviewId": 1,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 5,
                     "Date": "2021-08-01",
@@ -461,7 +459,7 @@ const ProductPage = () => {
                 },
                 {
                     "ReviewId": 3,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 4,
                     "Date": "2021-08-01",
@@ -516,7 +514,7 @@ const ProductPage = () => {
             "ProductReviews": [
                 {
                     "ReviewId": 1,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 5,
                     "Date": "2021-08-01",
@@ -532,7 +530,7 @@ const ProductPage = () => {
                 },
                 {
                     "ReviewId": 3,
-                    "Name": "Harshal Jain",
+                    "Name": "Gaurav Patil",
                     "Email": "",
                     "Rating": 4,
                     "Date": "2021-08-01",
@@ -546,7 +544,6 @@ const ProductPage = () => {
         let cart = JSON.parse(localStorage.getItem('cart'))
 
         if (cart) {
-            // alert('1 item is already added to cart')
             let itemincart = cart.find(item => item.productdata.ProductId === productdata.ProductId)
             if (itemincart) {
                 cart = cart.map(item => {
@@ -578,20 +575,13 @@ const ProductPage = () => {
                 productdata,
                 quantity: count
             }]
-
-            // console.log(cart)
             localStorage.setItem('cart', JSON.stringify(cart))
         }
         setreloadnavbar(!reloadnavbar)
-        // window.location.reload()
         toast.success('Item added to cart')
     }
     return (
         <div className='productpage'>
-            {/* <h1>Product id is - {prodid}</h1>
-            <p>
-                {JSON.stringify(productdata)}
-            </p> */}
 
             <Navbar reloadnavbar={reloadnavbar}/>
 
@@ -618,7 +608,7 @@ const ProductPage = () => {
                                     >
                                         <img src={item.image} alt=""
                                             className={
-                                                activeimg.id == item.id ? 'active' : ''
+                                                activeimg.id === item.id ? 'active' : ''
                                             }
                                         />
                                     </div>
