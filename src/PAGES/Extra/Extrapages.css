@@ -33,6 +33,7 @@
     color: var(--col1);
     margin: 0 0 10px 0;
     padding: 0;
+    /* text-align: center; */
     letter-spacing: 1px;
 }
 
@@ -43,6 +44,7 @@
     color: rgb(36, 36, 36);
     margin: 0 0 10px 0;
     padding: 0;
+    /* text-align: center; */
     letter-spacing: 1px;
 }
 
@@ -50,8 +52,10 @@
 .extrapageform {
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
     justify-content: flex-start;
     width: 50%;
+    /* max-width: 700px; */
     align-self: center;
 }
 
@@ -59,6 +63,7 @@
     display: flex;
     flex-direction: column;
     margin: 10px 0px;
+    /* background-color: aqua; */
 }
 
 .extrapageform div label {
@@ -104,6 +109,7 @@
     color: var(--col1);
     margin: 0 0 30px 0;
     padding: 0;
+    /* text-align: center; */
     letter-spacing: 1px;
     font-size: 60px;
 }
@@ -137,6 +143,9 @@
     fill: gold;
 }
 
+
+/* ////////////////////////////////////////////////////////// */
+
 .pgcont1{
     display: flex;
     flex-direction: column;
@@ -152,6 +161,7 @@
     color: rgb(119, 119, 119);
     margin-bottom: 10px;
     padding: 0;
+    /* text-align: center; */
     letter-spacing: 1px;
 }
 
@@ -161,8 +171,12 @@
     color: rgb(155, 155, 155);
     margin: 0 0 10px 0;
     padding: 0;
+    /* text-align: center; */
     letter-spacing: 1px;
 }
+
+/* ///////////////////////////////FAQ */
+
 
 .extrapage .faqcontainer{
     width: 60%;
@@ -204,6 +218,7 @@
     color: rgb(119, 119, 119);
     margin: 0;
     padding: 0;
+    /* text-align: center; */
     letter-spacing: 1px;
 }
 
@@ -212,6 +227,7 @@
     font-weight: 400;
     color: rgb(155, 155, 155);
     padding: 0;
+    /* text-align: center; */
     letter-spacing: 1px;
     margin: 0px;
 }
@@ -283,6 +299,7 @@
         display: flex;
         flex-direction: column;
         margin: 5px 0px;
+        /* background-color: aqua; */
     }
 
     .extrapageform div label {
@@ -327,6 +344,7 @@
         color: var(--col1);
         margin: 0 0 10px 0;
         padding: 0;
+        /* text-align: center; */
         letter-spacing: 1px;
         font-size: 30px;
     }
@@ -361,8 +379,10 @@
     .extrapageform {
         display: flex;
         flex-direction: column;
+        /* align-items: center; */
         justify-content: flex-start;
         width: 90%;
+        /* max-width: 700px; */
         align-self: center;
     }
 
@@ -408,6 +428,7 @@
         color: var(--col1);
         margin: 0;
         padding: 0;
+        /* text-align: center; */
         letter-spacing: 1px;
     }
 
@@ -416,12 +437,14 @@
         font-weight: 400;
         color: rgb(155, 155, 155);
         padding: 0;
+        /* text-align: center; */
         letter-spacing: 1px;
         margin: 0px;
     }
 
     .extrapage .faqcontainer{
         width: 97%;
+        /* background-color: aqua; */
         padding: 20px;
     }
     .extrapage .faqcontainer .faqhead h1{

@@ -3,6 +3,7 @@
     flex-direction: column;
 }
 
+
 .userprofilein {
     display: flex;
     width: 100%;
@@ -13,6 +14,7 @@
 
 .userprofile .userprofilein .left {
     width: 20%;
+    /* background-color: aqua; */
     border: 1px solid rgb(207, 207, 207);
     border-radius: 5px;
     min-height: 50vh;
@@ -20,6 +22,7 @@
 
 .userprofile .userprofilein .right {
     width: 60%;
+    /* background-color: aqua; */
     border: 1px solid rgb(207, 207, 207);
     border-radius: 5px;
     min-height: 50vh;
@@ -28,6 +31,7 @@
 @media (max-width: 1000px) {
     .userprofile .userprofilein .left {
         width: 30%;
+        /* background-color: aqua; */
         border: 1px solid rgb(207, 207, 207);
         border-radius: 5px;
         min-height: 50vh;
@@ -45,12 +49,14 @@
 @media (max-width: 1000px){
     .userprofile .userprofilein .left {
         width: 30%;
+        /* background-color: aqua; */
         border: 1px solid rgb(207, 207, 207);
         border-radius: 5px;
         min-height: 50vh;
     }
     .userprofile .userprofilein .right {
         width: 68%;
+        /* background-color: aqua; */
         border: 1px solid rgb(207, 207, 207);
         border-radius: 5px;
         min-height: 50vh;
@@ -64,6 +70,21 @@
         gap: 10px;
     }
 }
+
+/* @media (max-width: 800px) {
+    .userprofile .userprofilein .left {
+        width: 20%;
+        border: 1px solid rgb(207, 207, 207);
+        border-radius: 5px;
+        min-height: 50vh;
+    }
+    .userprofile .userprofilein .right {
+        width: 78%;
+        border: 1px solid rgb(207, 207, 207);
+        border-radius: 5px;
+        min-height: 50vh;
+    }
+} */
 
 @media (max-width: 500px){
     .userprofilein {

@@ -74,7 +74,7 @@ const Navbar = ({ reloadnavbar }) => {
             </div>
             <div className='s2'>
                 <Link to='/'>
-                    Home
+                    <a>Home</a>
                 </Link>
                 <Dropdown>
                     <Dropdown.Toggle variant="" id="dropdown-basic">
@@ -88,10 +88,10 @@ const Navbar = ({ reloadnavbar }) => {
                     </Dropdown.Menu>
                 </Dropdown>
                 <Link to='/about'>
-                    About Us
+                    <a>About Us</a>
                 </Link>
                 <Link to='/contact'>
-                    Contact Us
+                    <a>Contact Us</a>
                 </Link>
                 <Dropdown>
                     <Dropdown.Toggle variant="" id="dropdown-basic">
@@ -151,11 +151,11 @@ const Navbar = ({ reloadnavbar }) => {
                             </Dropdown></li>
 
                             <li> <Link to='/about' className='stylenone'>
-                                About Us
+                                <a>About Us</a>
                             </Link></li>
 
                             <li> <Link to='/contact' className='stylenone'>
-                                Contact Us
+                                <a>Contact Us</a>
                             </Link></li>
 
                             <li>

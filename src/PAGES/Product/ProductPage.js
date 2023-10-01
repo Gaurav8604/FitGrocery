@@ -1,15 +1,17 @@
 import React, { useEffect } from 'react'
-import { Link,} from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import img1 from '../../ASSETS/Images/1.png'
 import img2 from '../../ASSETS/Images/2.png'
 import img3 from '../../ASSETS/Images/3.png'
+import img4 from '../../ASSETS/Images/4.png'
 import Footer1 from '../../COMPONENTS/Footer/Footer1'
 import Footer2 from '../../COMPONENTS/Footer/Footer2'
 import Navbar from '../../COMPONENTS/Navbar/Navbar'
 import ProductsSlider from '../../COMPONENTS/Product/ProductsSlider'
 import './ProductPage.css'
 const ProductPage = () => {
+    const { prodid } = useParams()
     const [imageset, setimageset] = React.useState(null)
     const [productdata, setproductdata] = React.useState([])
     const [activeimg, setactiveimg] = React.useState({})
@@ -95,7 +97,7 @@ const ProductPage = () => {
             ]
         }
 
-        if (temp.Code === 200) {
+        if (temp.Code == 200) {
             setimageset(temp.Data[0].ProductImage)
             setproductdata(temp.Data[0])
             setactiveimg(temp.Data[0].ProductImage[0])
@@ -576,13 +578,21 @@ const ProductPage = () => {
                 productdata,
                 quantity: count
             }]
+
+            // console.log(cart)
             localStorage.setItem('cart', JSON.stringify(cart))
         }
         setreloadnavbar(!reloadnavbar)
+        // window.location.reload()
         toast.success('Item added to cart')
     }
     return (
         <div className='productpage'>
+            {/* <h1>Product id is - {prodid}</h1>
+            <p>
+                {JSON.stringify(productdata)}
+            </p> */}
+
             <Navbar reloadnavbar={reloadnavbar}/>
 
             <div className='pc1'>
@@ -608,7 +618,7 @@ const ProductPage = () => {
                                     >
                                         <img src={item.image} alt=""
                                             className={
-                                                activeimg.id === item.id ? 'active' : ''
+                                                activeimg.id == item.id ? 'active' : ''
                                             }
                                         />
                                     </div>

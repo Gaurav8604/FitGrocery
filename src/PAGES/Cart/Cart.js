@@ -8,7 +8,7 @@ import './Progress.css'
 import './CartContainer.css'
 import './ShippingContainer.css'
 import './PaymentContainer.css'
-import './OrderSuccessfull.css'
+import './OrderSucessfull.css'
 import { useRecoilState } from 'recoil'
 import { orderSuccessfulProvider } from '../../Providers/OrderSuccessfulProvider'
 import OrderSuccessful from '../../COMPONENTS/Order/OrderSuccessful'
@@ -32,6 +32,7 @@ const Cart = () => {
       cart.forEach(item => {
         tempsubtotal += item.productdata.SalesPrice * item.quantity
       })
+      // console.log(tempsubtotal)
       setsubtotal(tempsubtotal)
       setshipping(80)
       settax(tempsubtotal * 0.18 + 80 * 0.10)
@@ -45,7 +46,7 @@ const Cart = () => {
 
   React.useEffect(() => {
     getcartitemsfromlocalstorage()
-  })
+  }, [])
 
   const checklogin = () => {
     return true
@@ -53,6 +54,7 @@ const Cart = () => {
 
   const [reloadnavbar, setreloadnavbar] = React.useState(false)
   const removeitemfromcart = (index) => {
+    // alert(index)
     let temp = [...cartdata]
     temp.splice(index, 1)
     setcartdata(temp)
@@ -91,7 +93,7 @@ const Cart = () => {
       <div className='cart'>
         <div className='progress'>
           {
-            active === 1 ?
+            active == 1 ?
               <div className='c11'
                 onClick={() => {
                   cartdata.length > 0 && checklogin() && setactive(1)
@@ -118,7 +120,7 @@ const Cart = () => {
 
 
           {
-            active === 2 ?
+            active == 2 ?
               <div className='c11'
                 onClick={() => {
                   cartdata.length > 0 && checklogin() && setactive(2)
@@ -148,7 +150,7 @@ const Cart = () => {
           }
 
           {
-            active === 3 ?
+            active == 3 ?
               <div className='c11'
                 onClick={() => {
                   cartdata.length > 0 && checklogin() && setactive(3)
@@ -176,7 +178,7 @@ const Cart = () => {
               </div>
           }
           {
-            active === 4 ?
+            active == 4 ?
               <div className='c11'
                 onClick={() => {
                   cartdata.length > 0 && checklogin() && setactive(4)
@@ -206,8 +208,9 @@ const Cart = () => {
         </div>
 
         {
-          active === 1 &&
+          active == 1 &&
           <div className='cartcont'>
+            {/* <p>Cart cont</p> */}
             {
               cartdata.length > 0 ?
                 <table className='carttable'>
@@ -357,7 +360,7 @@ const Cart = () => {
         }
 
         {
-          active === 2 &&
+          active == 2 &&
           <div className='shippingcont'>
             <div className='selectdate'>
               <h2 className='mainhead1'>Select Delivery Date</h2>
@@ -404,7 +407,7 @@ const Cart = () => {
           </div>
         }
         {
-          active === 3 &&
+          active == 3 &&
           <div className='paymentcont'>
             <h2 className='mainhead1'>Select Payment Method</h2>
             <div className='paymenttypes'>
@@ -443,7 +446,7 @@ const Cart = () => {
           </div>
         }
         {
-          active === 4 &&
+          active == 4 &&
           <div className='ordersuccessfull'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
@@ -455,8 +458,12 @@ const Cart = () => {
           </div>
         }
 
+
+
+
+        {/* CART BUTTONS */}
         {
-          active === 1 && cartdata.length > 0 &&
+          active == 1 && cartdata.length > 0 &&
           <div className='btns'>
             <button className='nextbtn'
               onClick={() => {
@@ -467,7 +474,7 @@ const Cart = () => {
         }
 
         {
-          active === 2 &&
+          active == 2 &&
           <div className='btns'>
             <button className='backbtn'
               onClick={() => {
@@ -483,7 +490,7 @@ const Cart = () => {
         }
 
         {
-          active === 3 &&
+          active == 3 &&
           <div className='btns'>
             <button className='backbtn'
               onClick={() => {
@@ -498,8 +505,13 @@ const Cart = () => {
           </div>
         }
         {
-          active === 4 &&
+          active == 4 &&
           <div className='btns'>
+            {/* <button className='backbtn'
+              onClick={() => {
+                checklogin() && setactive(3)
+              }}
+            >Back</button> */}
             <button className='nextbtn'
               onClick={() => {
                 setselectedorderid(12345)

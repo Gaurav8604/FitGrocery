@@ -1,6 +1,7 @@
 .bannerslider {
     width: 100%;
     overflow: hidden;
+    /* height: 60vh; */
     position: relative;
 }
 
@@ -66,4 +67,25 @@
 .bannerslider .imagecont button:hover {
     background-color: var(--col1);
     color: white;
+}
+
+
+@media (max-width: 768px) {
+    .bannerslider .imagecont {
+        height: 50vh;
+    }
+
+    .bannerslider .imagecont h1 {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+
+    .bannerslider .imagecont span {
+        font-size: 1rem;
+        width: 90%;
+    }
+        
+    .bannerslider .imagecont button {
+        font-size: 1rem;
+      }
 }
